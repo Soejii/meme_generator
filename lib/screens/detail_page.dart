@@ -269,7 +269,7 @@ class _DetailPageState extends State<DetailPage> {
     final image = File('${directory.path}/flutter.png');
     image.writeAsBytesSync(bytes);
 
-    await Share.shareFiles([image.path]);
+    await Share.shareFiles([image.path],text: 'Checkout my memes o peasant');
   }
 
   Future saveImage(Uint8List bytes) async {
